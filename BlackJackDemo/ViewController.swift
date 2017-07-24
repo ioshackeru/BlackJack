@@ -9,17 +9,32 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    //findViewById... meh
+    @IBOutlet weak var midLabel: UILabel!
+    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var bottomLabel: UILabel!
+    
+    @IBAction func dealCard(_ sender: UIButton) {
+        let card = getCard()
+        midLabel.text = "\(card.suit)"
+        topLabel.text = "\(card.rank)"
+        bottomLabel.text = "\(card.suit)"
+        //midLabel.text = card.suit.description
+    }
+    
+    func getCard() -> BlackJackCard{
+        let rank:Int = rand(from: 2, to: 15)//2...14
+        let suit:Int = rand(max: 4) // 0...3
+        let card = BlackJackCard(rank: rank, suit: suit)
+        print(card)
+        
+        
+        return card
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        print(Deck())
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

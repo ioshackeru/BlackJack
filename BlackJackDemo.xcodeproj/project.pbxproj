@@ -13,6 +13,11 @@
 		36BA47BC1F260D0A009F57B3 /* BlackJackDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36BA47BA1F260D0A009F57B3 /* BlackJackDemo.xcdatamodeld */; };
 		36BA47BE1F260D0A009F57B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36BA47BD1F260D0A009F57B3 /* Assets.xcassets */; };
 		36BA47C11F260D0A009F57B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36BA47BF1F260D0A009F57B3 /* LaunchScreen.storyboard */; };
+		36BA47C91F261370009F57B3 /* Suit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA47C81F261370009F57B3 /* Suit.swift */; };
+		36BA47CB1F2613D2009F57B3 /* Rank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA47CA1F2613D2009F57B3 /* Rank.swift */; };
+		36BA47CD1F2613E8009F57B3 /* BlackJackCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA47CC1F2613E8009F57B3 /* BlackJackCard.swift */; };
+		36BA47CF1F261415009F57B3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA47CE1F261415009F57B3 /* Utils.swift */; };
+		36BA47D21F2622ED009F57B3 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BA47D11F2622ED009F57B3 /* Deck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		36BA47BD1F260D0A009F57B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36BA47C01F260D0A009F57B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36BA47C21F260D0A009F57B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36BA47C81F261370009F57B3 /* Suit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suit.swift; sourceTree = "<group>"; };
+		36BA47CA1F2613D2009F57B3 /* Rank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rank.swift; sourceTree = "<group>"; };
+		36BA47CC1F2613E8009F57B3 /* BlackJackCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackJackCard.swift; sourceTree = "<group>"; };
+		36BA47CE1F261415009F57B3 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		36BA47D11F2622ED009F57B3 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		36BA47B21F260D0A009F57B3 /* BlackJackDemo */ = {
 			isa = PBXGroup;
 			children = (
+				36BA47D01F262263009F57B3 /* blackjack */,
 				36BA47B31F260D0A009F57B3 /* AppDelegate.swift */,
 				36BA47B51F260D0A009F57B3 /* ViewController.swift */,
 				36BA47B71F260D0A009F57B3 /* Main.storyboard */,
@@ -65,6 +76,18 @@
 				36BA47BA1F260D0A009F57B3 /* BlackJackDemo.xcdatamodeld */,
 			);
 			path = BlackJackDemo;
+			sourceTree = "<group>";
+		};
+		36BA47D01F262263009F57B3 /* blackjack */ = {
+			isa = PBXGroup;
+			children = (
+				36BA47CC1F2613E8009F57B3 /* BlackJackCard.swift */,
+				36BA47CA1F2613D2009F57B3 /* Rank.swift */,
+				36BA47C81F261370009F57B3 /* Suit.swift */,
+				36BA47CE1F261415009F57B3 /* Utils.swift */,
+				36BA47D11F2622ED009F57B3 /* Deck.swift */,
+			);
+			name = blackjack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +164,11 @@
 			files = (
 				36BA47B61F260D0A009F57B3 /* ViewController.swift in Sources */,
 				36BA47B41F260D0A009F57B3 /* AppDelegate.swift in Sources */,
+				36BA47C91F261370009F57B3 /* Suit.swift in Sources */,
+				36BA47CF1F261415009F57B3 /* Utils.swift in Sources */,
+				36BA47D21F2622ED009F57B3 /* Deck.swift in Sources */,
+				36BA47CB1F2613D2009F57B3 /* Rank.swift in Sources */,
+				36BA47CD1F2613E8009F57B3 /* BlackJackCard.swift in Sources */,
 				36BA47BC1F260D0A009F57B3 /* BlackJackDemo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
